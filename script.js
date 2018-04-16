@@ -31,8 +31,11 @@ $(document).ready(function(){
     $('#navid').toggle();
   });
 
+  if($('#trigger').is(":visible")) {
   $(document).click( function() {
         $('#navid').hide();
+
   });
+}
 
   });
