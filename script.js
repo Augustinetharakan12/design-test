@@ -9,7 +9,7 @@ $(document).ready(function(){
       // "this" keyword refers waypoint object and the element is located at "this.element"
       // using "this.element.id", get the nav anchor you want to target
       // example: "nav a[href='#landing']"
-      var selector = "nav a[href='#" + this.element.id + "']"; 
+      var selector = "nav a[href='#" + this.element.id + "']";
       $(selector).addClass('disable-click');
     }
     }, {
@@ -19,11 +19,20 @@ $(document).ready(function(){
     $('.wp-zone').waypoint(function(direction) {
       if (direction === 'up') {
         $('nav a').removeClass('disable-click');
-        var selector = "nav a[href='#" + this.element.id + "']"; 
+        var selector = "nav a[href='#" + this.element.id + "']";
         $(selector).addClass('disable-click');
       }
     }, {
       offset: '-5%'
-  }); 
-    
+  });
+
+  $('#trigger').click( function(event) {
+    event.stopPropagation();
+    $('#navid').toggle();
+  });
+
+  $(document).click( function() {
+        $('#navid').hide();
+  });
+
   });
