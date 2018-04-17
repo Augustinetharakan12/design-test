@@ -29,8 +29,7 @@ $(document).ready(function(){
       $(document).click( function() {
         $('#navid').hide();
      });  
-      $('.Navbar').addClass('solid');
-      $('.Navbar').removeClass('white-text');  
+    
     }  
    });
 
