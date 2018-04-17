@@ -35,51 +35,6 @@ h1{
     padding: 20px;
     font-size: 35px;
 }
-.fixed-menu{
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    padding: 5px;
-    z-index: 1;
-    background-color: #FFFFF0;
-    box-shadow: 0 1px 3px #434343;
-    -webkit-box-shadow: 0 1px 3px #434343;
-    transition: top .5s;
-    -webkit-transition: top .5s;
-    -moz-transition: top .5s;
-    -o-transition: top .5s;
-  }
-
-  .fixed-menu.active{
-    top: 0%;
-  }
-
-  .fixed-menu .fixed-nav-menu{
-    text-align: right;
-    vertical-align: middle;
-    font-size: 21px;
-  }
-
-  .fixed-menu li{
-    display: inline-block;
-    margin: 0px 10px 0px 10px;
-  }
-
-  .fixed-menu a{
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 11px;
-    padding: 24px 5px;
-    line-height: 48px;
-    -webkit-transition: color 0.3s;
-    -o-transition: color 0.3s;
-    transition: color 0.3s;
-  }
-
-  .fixed-menu a:hover{
-    color: #DA4453;
-  }
 
   .section-content{
     text-align: center;
