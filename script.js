@@ -36,13 +36,10 @@ $(document).ready(function(){
     if($(window).width() < 786){
        $('#navid').hide();
     }
+    else{
+      $('#navid').show();
+    }
   });
     
-$(window).resize(function (){
-  if($(window).width() > 786){
-    $('#navid').toggle();
-     $('#navid').show();
-  }
-});
 
   });
