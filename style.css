@@ -212,6 +212,10 @@ padding-bottom: 5px;
 
 
 @media only screen and (max-width: 786px) {
+  .Navbar{
+    height: 40px;
+    padding-top: 5px;
+  }
   .Navbar, .Navbar-Items{
     flex-direction: column;
   }
@@ -238,7 +242,9 @@ padding-bottom: 5px;
   .center-mobile{
     text-align: center;
   }
-
+  .excel-logo{
+    height: 35px;
+  }
 }
 @media only screen and (min-width: 786px) {
  .Navbar{
