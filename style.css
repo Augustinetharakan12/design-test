@@ -157,9 +157,9 @@ h1{
     width: 100%;
     padding: 10px;
     z-index: 1;
-    background-color:rgb(255, 255, 255);
-    box-shadow: 0 1px 3px #434343;
-    -webkit-box-shadow: 0 1px 3px #434343;
+    /*background-color:rgb(255, 255, 255);*/
+    /*box-shadow: 0 1px 3px #434343;*/
+    /*-webkit-box-shadow: 0 1px 3px #434343;*/
     transition: top .5s;
     -webkit-transition: top .5s;
     -moz-transition: top .5s;
@@ -190,6 +190,17 @@ h1{
     color: #DA4453;
   }
 
+  .solid{
+    background-color:rgb(255, 255, 255);
+    transition: background-color 1.5s ease 0s;
+    box-shadow: 0 0 4px grey;
+    -webkit-box-shadow: 0 0 4px grey;
+  }
+
+  .white-text {
+    color: rgb(255, 255, 255);
+  }
+
 @media only screen and (max-width: 786px) {
   .Navbar, .Navbar-Items{
     flex-direction: column;
@@ -214,4 +225,11 @@ h1{
   .Navbar-Link--toggleShow {
     display: flex;
   }
+}
+@media only screen and (min-width: 786px) {
+ .Navbar{
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0 0 4px grey;
+  color: black !important;
+ }
 }

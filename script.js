@@ -1,3 +1,4 @@
+//scorll effect
 $(document).ready(function(){
     $('.wp-zone').waypoint(function(direction) {
     if (direction === 'down') {
@@ -19,25 +20,37 @@ $(document).ready(function(){
       offset: '-5%'
   });
 
-  $('#trigger').click( function(event) {
+  
+  //navbar
+ $('#trigger').click( function(event) {
     if($(window).width() < 786){
       event.stopPropagation();
       $('#navid').toggle();
-
-      $("#navid").click( function() {
-        if($(window).width() < 786){
-         $('#navid').hide();
-        }
-      });  
+      $('.Navbar').addClass('solid');
+      $('.Navbar').removeClass('white-text');  
     }  
    });
 
    $(window).resize(function (){
     if($(window).width() < 786){
-       $('#navid').hide();
+      $('#navid').hide();
+      $('.Navbar').addClass('white-text');
     }
-  });
-    
+});
+
+$(window).scroll(function() {
+  // checks if window is scrolled more than 500px, adds/removes solid class
+
+  if($(this).scrollTop() > 690) { 
+      $('.Navbar').addClass('solid');
+      $('.navbar').removeClass('white-text');
+  } else {
+      $('.Navbar').removeClass('solid');
+      $('.Navbar').addClass('white-text');
+      
+  }
+
+});
 $(window).resize(function (){
   if($(window).width()>786){
     $('#navid').toggle();
