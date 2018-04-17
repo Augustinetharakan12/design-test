@@ -85,7 +85,6 @@ h1{
   .section-content{
     text-align: center;
   }
-
   #home{
     padding-top: 1px;
     width: 100%;
@@ -183,3 +182,90 @@ h1{
       background-color: #434343;
       padding-top:8px;
   }
+
+/* New Code goes here */
+
+.Navbar-Items {
+  display: flex;
+}
+
+.Navbar-Items--Right {
+  padding-right: 30px;
+  margin-left: auto;
+}
+
+.Navbar-Link--Toggle {
+  display: none;
+}
+
+.Navbar-Title {
+  float: left;
+  margin: 5px 0px 0px 10px;
+  font-size: 20px;
+}
+
+.Navbar{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    padding: 5px;
+    z-index: 1;
+    background-color: #FFFFF0;
+    box-shadow: 0 1px 3px #434343;
+    -webkit-box-shadow: 0 1px 3px #434343;
+    transition: top .5s;
+    -webkit-transition: top .5s;
+    -moz-transition: top .5s;
+    -o-transition: top .5s;
+  }
+
+  .Navbar.active{
+    top: 0%;
+  }
+
+  .Navbar-Link {
+    margin: 0px 10px 0px 10px;
+  }
+
+  .Navbar-Link a{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 24px 5px;
+    line-height: 48px;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+  }
+
+  .Navbar-Link a:hover{
+    color: #DA4453;
+  }
+
+@media only screen and (max-width: 786px) {
+  .Navbar, .Navbar-Items{
+    flex-direction: column;
+  }
+  .Navbar-Items {
+    display: none;
+  }
+  .Navbar-Link {
+    padding-top: 10px;
+  }
+  .Navbar-Items--Right  {
+    margin-left: 0;
+  }
+  .Navbar-Link--Toggle {
+    align-self: flex-end;
+    padding-right: 35px;
+    font-size: 30px;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+  .Navbar-Link--toggleShow {
+    display: flex;
+  }
+}
