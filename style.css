@@ -20,6 +20,9 @@ a{
     text-align: center;
 }
 
+.center-mobile{
+  text-align: initial;
+}
 section{
     min-height: 754px;
     position: relative;
@@ -130,6 +133,10 @@ h1{
   }
 
 /* New Code goes here */
+.excel-logo{
+height: 50px;
+padding-bottom: 5px;
+}
 
 .Navbar-Items {
   display: flex;
@@ -164,6 +171,8 @@ h1{
     -webkit-transition: top .5s;
     -moz-transition: top .5s;
     -o-transition: top .5s;
+    padding-left:0px; 
+    max-height: 50px;
   }
 
   .Navbar.active{
@@ -193,8 +202,8 @@ h1{
   .solid{
     background-color:rgb(255, 255, 255);
     transition: background-color 1.5s ease 0s;
-    box-shadow: 0 0 4px grey;
-    -webkit-box-shadow: 0 0 4px grey;
+   /* box-shadow: 0 0 4px grey;
+    -webkit-box-shadow: 0 0 4px grey;*/
   }
 
   .white-text {
@@ -226,12 +235,15 @@ h1{
   .Navbar-Link--toggleShow {
     display: flex;
   }
+  .center-mobile{
+    text-align: center;
+  }
 
 }
 @media only screen and (min-width: 786px) {
  .Navbar{
   background-color:rgb(255, 255, 255);
-  box-shadow: 0 0 4px grey;
+  /*box-shadow: 0 0 4px grey;*/
   color: black !important;
  }
 }
