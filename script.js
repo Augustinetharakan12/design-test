@@ -24,16 +24,24 @@ $(document).ready(function(){
       event.stopPropagation();
       $('#navid').toggle();
 
-  
-      $(document).click( function() {
+      $("#navid").click( function() {
+        if($(window).width() < 786){
          $('#navid').hide();
+        }
       });  
     }  
    });
+
+   $(window).resize(function (){
+    if($(window).width() < 786){
+       $('#navid').hide();
+    }
+  });
     
 $(window).resize(function (){
   if($(window).width() > 786){
-    $('#navid').show();
+    $('#navid').toggle();
+     $('#navid').show();
   }
 });
 
