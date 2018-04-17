@@ -27,7 +27,7 @@ section{
 }
 
 h1{
-    position: absolute;
+   /* position: absolute; */
     top: 10%;
     left: 40%;
     color: #FFFFF0;
@@ -50,6 +50,7 @@ h1{
 }
 
 #excel{
+    padding-top: 1px;
     height: 100vh;
     border-bottom: 1px solid #FFFFF0;
     background: #147745;
@@ -57,6 +58,7 @@ h1{
 }
 
 #sponsors{
+    padding-top: 1px;
     height: 100vh;
     border-bottom: 1px solid #FFFFF0;
     background: rgb(177, 36, 50);
@@ -64,6 +66,7 @@ h1{
 }
 
 #experience{
+    padding-top: 1px;
     height: 100vh;
     border-bottom: 1px solid #FFFFF0;
     background: #114477;
@@ -71,6 +74,7 @@ h1{
 }
 
 #contacts{
+    padding-top: 1px;
     height: 100vh;
     border-bottom: 1px solid #FFFFF0;
     background: #147745;
@@ -78,6 +82,7 @@ h1{
 }
 
 #gallery{
+    padding-top: 1px;
     height: 100vh;
     border-bottom: 1px solid #FFFFF0;
     background: #794912;
@@ -154,7 +159,7 @@ h1{
     position: fixed;
     top: 0%;
     width: 100%;
-    padding: 5px;
+    padding: 12px;
     z-index: 1;
     background-color: #FFFFF0;
     box-shadow: 0 1px 3px #434343;
