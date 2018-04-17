@@ -25,9 +25,11 @@ $(document).ready(function(){
  $('#trigger').click( function(event) {
     if($(window).width() < 786){
       event.stopPropagation();
+      $('#navid').addClass('solid');
       $('#navid').toggle();
       $(document).click( function() {
         $('#navid').hide();
+        
      });  
     
     }  
