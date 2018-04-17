@@ -26,6 +26,9 @@ $(document).ready(function(){
     if($(window).width() < 786){
       event.stopPropagation();
       $('#navid').toggle();
+      $(document).click( function() {
+        $('#navid').hide();
+     });  
       $('.Navbar').addClass('solid');
       $('.Navbar').removeClass('white-text');  
     }  
@@ -43,7 +46,7 @@ $(window).scroll(function() {
 
   if($(this).scrollTop() > 690) { 
       $('.Navbar').addClass('solid');
-      $('.navbar').removeClass('white-text');
+      $('.Navbar').removeClass('white-text');
   } else {
       $('.Navbar').removeClass('solid');
       $('.Navbar').addClass('white-text');
