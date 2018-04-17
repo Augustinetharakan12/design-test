@@ -39,7 +39,7 @@ $(document).ready(function(){
   });
     
 $(window).resize(function (){
-  if($(window).width() > 786){
+  if($(window).width()>786){
     $('#navid').toggle();
      $('#navid').show();
   }
