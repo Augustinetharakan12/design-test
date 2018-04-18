@@ -48,9 +48,11 @@ $(window).scroll(function() {
   if($(this).scrollTop() > 690) { 
       $('.Navbar').addClass('solid');
       $('.Navbar').removeClass('white-text');
-  } else {
+      $('.Navbar-Link a').css("color","black");
+    } else {
       $('.Navbar').removeClass('solid');
       $('.Navbar').addClass('white-text');
+      $('.Navbar-Link a').css("color","white");
       
   }
 
@@ -79,6 +81,7 @@ $(window).resize(function (){
   if($(window).width()>786){
     $('#navid').toggle();
      $('#navid').show();
+     $('.Navbar-Link a').css("color","white");
   }
 });
 
