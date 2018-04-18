@@ -64,9 +64,11 @@ $(window).scroll(
   function () {
   var currentTop = $(window).scrollTop();
   if (currentTop < this.previousTop) {
-      $(".Navbar").fadeIn(1500);
+    $('.Navbar').removeClass("slideUp");
+    $('.Navbar').addClass("slideDown");
   } else {
-      $(".Navbar").fadeOut(1500);
+    $('.Navbar').removeClass("slideDown");
+    $('.Navbar').addClass("slideUp");
   }
   this.previousTop = currentTop;
 });
