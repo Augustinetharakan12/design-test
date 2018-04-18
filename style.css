@@ -248,9 +248,7 @@ padding-left: 5px;
   }
 }
 @media only screen and (min-width: 786px) {
- .Navbar{
-  background-color:rgb(255, 255, 255);
-  /*box-shadow: 0 0 4px grey;*/
-  color: black !important;
+ #home .Navbar-Link a{
+  color: white !important;
  }
 }
