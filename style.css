@@ -136,6 +136,7 @@ h1{
 .excel-logo{
 height: 50px;
 padding-bottom: 5px;
+padding-left: 5px;
 }
 
 .Navbar-Items {
@@ -243,7 +244,7 @@ padding-bottom: 5px;
     text-align: center;
   }
   .excel-logo{
-    height: 35px;
+    height: 40px;
   }
 }
 @media only screen and (min-width: 786px) {
