@@ -20,14 +20,17 @@ a{
     text-align: center;
 }
 
+.center-mobile{
+  text-align: initial;
+}
 section{
     min-height: 754px;
     position: relative;
-    border-bottom: 1px solid #FFFFF0;
+   
 }
 
 h1{
-    position: absolute;
+   /* position: absolute; */
     top: 10%;
     left: 40%;
     color: #FFFFF0;
@@ -36,93 +39,54 @@ h1{
     font-size: 35px;
 }
 
-.fixed-menu{
-    position: fixed;
-    top: 0%;
+  .section-content{
+    text-align: center;
+  }
+
+#home{
+    padding-top: 1px;
     width: 100%;
-    padding: 5px;
-    z-index: 1;
-    background-color: #FFFFF0;
-    box-shadow: 0 1px 3px #434343;
-    -webkit-box-shadow: 0 1px 3px #434343;
-    transition: top .5s;
-    -webkit-transition: top .5s;
-    -moz-transition: top .5s;
-    -o-transition: top .5s;
-  }
-
-  .fixed-menu.active{
-    top: 0%;
-  }
-
-  .fixed-menu .fixed-nav-menu{
-    text-align: right;
-    vertical-align: middle;
-    font-size: 21px;
-  }
-
-  .fixed-menu li{
-    display: inline-block;
-    margin: 0px 10px 0px 10px;
-  }
-
-  .fixed-menu a{
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 11px;
-    padding: 24px 5px;
-    line-height: 48px;
-    -webkit-transition: color 0.3s;
-    -o-transition: color 0.3s;
-    transition: color 0.3s;
-  }
-
-  .fixed-menu a:hover{
-    color: #DA4453;
-  }
-
-  #home{
-    height: 100vh;
-    border-bottom: 1px solid #FFFFF0;
-    background: rgb(18, 134, 138);
+    height: 100vh; 
+    background: rgb(47, 53, 66);
 
 }
 
 #excel{
+    padding-top: 1px;
     height: 100vh;
-    border-bottom: 1px solid #FFFFF0;
-    background: #147745;
+    background: #1abc9c;
 
 }
 
 #sponsors{
+    padding-top: 1px;
     height: 100vh;
-    border-bottom: 1px solid #FFFFF0;
-    background: rgb(177, 36, 50);
+    background: #2c3e50;
 
 }
 
 #experience{
+    padding-top: 1px;
     height: 100vh;
-    border-bottom: 1px solid #FFFFF0;
-    background: #114477;
-
-}
-
-#contacts{
-    height: 100vh;
-    border-bottom: 1px solid #FFFFF0;
-    background: #147745;
+    background:#3498db;
 
 }
 
 #gallery{
-    height: 100vh;
-    border-bottom: 1px solid #FFFFF0;
-    background: #794912;
+  padding-top: 1px;
+  height: 100vh;
+  background: rgb(87, 96, 111);
 
 }
+
+#contacts{
+    padding-top: 1px;
+    height: 100vh;
+    background:#16a085 ;
+
+}
+
+
 
 .disable-click{
     color: #DA4453;
@@ -167,3 +131,140 @@ h1{
       background-color: #434343;
       padding-top:8px;
   }
+
+/* New Code goes here */
+.excel-logo{
+height: 50px;
+padding-bottom: 5px;
+padding-left: 5px;
+}
+
+.Navbar-Items {
+  display: flex;
+}
+
+.Navbar-Items--Right {
+  padding-right: 30px;
+  margin-left: auto;
+}
+
+.Navbar-Link--Toggle {
+  display: none;
+}
+
+.Navbar-Title {
+  float: left;
+  margin: 5px 0px 0px 10px;
+  font-size: 20px;
+}
+
+.Navbar{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    /*background-color:rgb(255, 255, 255);*/
+    /*box-shadow: 0 1px 3px #434343;*/
+    /*-webkit-box-shadow: 0 1px 3px #434343;*/
+    transition: top .5s;
+    -webkit-transition: top .5s;
+    -moz-transition: top .5s;
+    -o-transition: top .5s;
+    padding-left:0px; 
+    max-height: 50px;
+  }
+
+  .Navbar.active{
+    top: 0%;
+  }
+
+  .Navbar-Link {
+    margin: 0px 10px 0px 10px;
+  }
+
+  .Navbar-Link a{
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    padding: 24px 5px;
+    line-height: 48px;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+  }
+
+  .Navbar-Link a:hover{
+    color: #DA4453;
+  }
+
+  .solid{
+    background-color:rgb(255, 255, 255);
+    transition: background-color 1.5s ease 0s;
+   /* box-shadow: 0 0 4px grey;
+    -webkit-box-shadow: 0 0 4px grey;*/
+  }
+
+  .white-text {
+    color: rgb(255, 255, 255);
+  }
+
+
+  .slideUp {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    transition: transform 1s ease-out;
+  }
+  
+  .slideDown {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    transition: transform 1s ease-out;
+  }
+
+@media only screen and (max-width: 786px) {
+  .Navbar{
+    height: 40px;
+    padding-top: 5px;
+  }
+  .Navbar, .Navbar-Items{
+    flex-direction: column;
+  }
+  .Navbar-Items {
+    display: none;
+  }
+  .Navbar-Link {
+    padding-top: 10px;
+ }
+ .Navbar-Link a{
+  color: black !important;
+ }
+
+  .Navbar-Items--Right  {
+    margin-left: 0;
+  }
+  .Navbar-Link--Toggle {
+    align-self: flex-end;
+    padding-right: 35px;
+    font-size: 30px;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+  .Navbar-Link--toggleShow {
+    display: flex;
+  }
+  .center-mobile{
+    text-align: center;
+  }
+  .excel-logo{
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 786px) {
+  .Navbar-Link a{
+  color: white;
+ }
+}
