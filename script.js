@@ -81,7 +81,6 @@ $(window).resize(function (){
   if($(window).width()>786){
     $('#navid').toggle();
      $('#navid').show();
-     $('.Navbar-Link a').css("color","white");
   }
 });
 
