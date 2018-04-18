@@ -55,6 +55,24 @@ $(window).scroll(function() {
   }
 
 });
+
+//transparency effect
+$(window).scroll(
+  {
+      previousTop: 0
+  }, 
+  function () {
+  var currentTop = $(window).scrollTop();
+  if (currentTop < this.previousTop) {
+      $(".Navbar").fadeIn(1500);
+  } else {
+      $(".Navbar").fadeOut(1500);
+  }
+  this.previousTop = currentTop;
+});
+
+
+
 $(window).resize(function (){
   if($(window).width()>786){
     $('#navid').toggle();
