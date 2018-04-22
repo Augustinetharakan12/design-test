@@ -70,7 +70,9 @@ h1{
     padding-top: 1px;
     height: 100vh;
     background:#3498db;
-
+    display: grid ;
+    /* grid-template-columns:   auto ; */
+    grid-template-rows: 50% auto 50px;
 }
 
 #gallery{
@@ -269,3 +271,22 @@ padding-left: 5px;
   color: white;
  }
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-auto-rows:500px;
+  margin: 100px;
+ 
+}
+.card {
+  box-shadow: 0px 1px 5px #555;
+  background-color:#01579B;
+}
+.card__title {
+  font-size: 2rem;
+  padding: .5rem;
+}
+.card__description {
+  padding: .5rem;
+  line-height: 5em;
