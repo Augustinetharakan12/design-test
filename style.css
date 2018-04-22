@@ -398,6 +398,11 @@ padding-left: 5px;
     line-height: 5em;
   }
 
+  .card-img{
+    height:7em;
+    border-radius: 15em;
+  }
+
 @media only screen and (max-width: 786px) {
   .Navbar{
     height: 40px;
