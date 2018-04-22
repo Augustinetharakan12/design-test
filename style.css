@@ -4,6 +4,7 @@ body{
     font-family: sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    scroll-behavior:smooth;
 }
 
 ul{
@@ -27,6 +28,19 @@ section{
     min-height: 754px;
     position: relative;
 
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 h1{
@@ -60,8 +74,8 @@ h1{
 
 #sponsors{
     padding-top: 1px;
-    height: 100vh;
-    background: #2c3e50;
+    /*height: 100vh;*/
+    background:rgb(255, 255, 255) ;
 
 }
 
@@ -69,7 +83,9 @@ h1{
     padding-top: 1px;
     height: 100vh;
     background:#3498db;
-
+    display: grid ;
+    /* grid-template-columns:   auto ; */
+    grid-template-rows: 50% auto 50px;
 }
 
 #gallery{
@@ -85,8 +101,6 @@ h1{
     background:#16a085 ;
 
 }
-
-
 
 .disable-click{
     color: #DA4453;
@@ -137,6 +151,17 @@ height: 50px;
 padding-bottom: 5px;
 padding-left: 5px;
 }
+
+.sponsor-image{
+  max-height: 12.9vh;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);  
+}
+ .sponsor-font{
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 7vh;
+  color: black;
+ }
 
 .excel-container {
   height: 100%;
@@ -280,6 +305,27 @@ padding-left: 5px;
             transform: translateY(0);
     transition: transform 1s ease-out;
   }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows:500px;
+    margin: 100px;
+   
+  }
+  .card {
+    box-shadow: 0px 1px 5px #555;
+    background-color:#01579B;
+  }
+  .card__title {
+    font-size: 2rem;
+    padding: .5rem;
+  }
+  
+  .card__description {
+    padding: .5rem;
+    line-height: 5em;
+  }
 
 @media only screen and (max-width: 786px) {
   .Navbar{
@@ -326,13 +372,28 @@ padding-left: 5px;
     grid-template-columns: 1fr;
     grid-row-gap: 50px;
   }
+.grid-container {
+  display: grid;
+  grid-gap: 5px 10px;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
 
   #excel {
     height: 200vh;
   }
+
+
+.grid-item {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
 }
+
+
 @media only screen and (min-width: 786px) {
   .Navbar-Link a{
   color: white;
  }
+}
 }
