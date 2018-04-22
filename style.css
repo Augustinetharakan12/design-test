@@ -95,12 +95,38 @@ h1{
 
 }
 
+/* contact */
 #contacts{
-    padding-top: 1px;
-    height: 100vh;
-    background:#16a085 ;
+  padding-top: 1px;
+  background:#41a58f ;
 
 }
+
+.contact-content{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-auto-rows: auto;
+grid-gap: 1.5em;
+padding: 1.5em;
+}
+
+.contact-card{
+padding: 2em;
+}
+
+.contact-img{
+ height:13em;
+ border-radius: 20em;
+ 
+}
+
+.contact-desc{
+padding:15px;
+font-size:22px;
+color:white;
+text-align: center;
+}
+
 
 .disable-click{
     color: #DA4453;
@@ -390,7 +416,34 @@ padding-left: 5px;
   text-align: center;
 }
 
+ /*contact */
 
+ .contact-content{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: .8em;
+  padding: 1em;
+}
+
+.contact-card{
+  padding: 1em;
+}
+
+.contact-img{
+   height:10em;
+   border-radius: 20em;
+   
+}
+
+.contact-desc{
+  padding:10px;
+  font-size:16px;
+  color:white;
+  text-align: center;
+}
+
+}
 @media only screen and (min-width: 786px) {
   .Navbar-Link a{
   color: white;
