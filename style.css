@@ -163,7 +163,6 @@ padding-left: 5px;
   color: black;
  }
 
- .Navbar-Items {
 .excel-container {
   height: 100%;
   display: grid;
@@ -292,6 +291,27 @@ padding-left: 5px;
             transform: translateY(0);
     transition: transform 1s ease-out;
   }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows:500px;
+    margin: 100px;
+   
+  }
+  .card {
+    box-shadow: 0px 1px 5px #555;
+    background-color:#01579B;
+  }
+  .card__title {
+    font-size: 2rem;
+    padding: .5rem;
+  }
+  
+  .card__description {
+    padding: .5rem;
+    line-height: 5em;
+  }
 
 @media only screen and (max-width: 786px) {
   .Navbar{
@@ -332,14 +352,13 @@ padding-left: 5px;
     height: 40px;
   }
 
-<<<<<<< HEAD
 .grid-container {
   display: grid;
   grid-gap: 5px 10px;
   grid-template-columns: auto auto auto;
   padding: 5px;
-=======
-  .excel-container {
+}
+.excel-container {
     height: 50%;
     grid-auto-rows: 50%;
     grid-template-columns: 1fr;
@@ -348,37 +367,18 @@ padding-left: 5px;
   #excel {
     height: 150vh;
   }
->>>>>>> d50cc1adfc6c60f0a6eb22a29dbc8f3680a762f4
-}
+
 
 .grid-item {
   padding: 10px;
   font-size: 30px;
   text-align: center;
 }
-}
+
 
 @media only screen and (min-width: 786px) {
   .Navbar-Link a{
   color: white;
  }
 }
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  grid-auto-rows:500px;
-  margin: 100px;
- 
 }
-.card {
-  box-shadow: 0px 1px 5px #555;
-  background-color:#01579B;
-}
-.card__title {
-  font-size: 2rem;
-  padding: .5rem;
-}
-.card__description {
-  padding: .5rem;
-  line-height: 5em;
