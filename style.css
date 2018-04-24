@@ -87,10 +87,12 @@ h2{
 #experience{
     padding-top: 1px;
     height: 100vh;
-    background: #efeff3;
+    /*background: #efeff3;*/
     display: grid ;
     /* grid-template-columns:   auto ; */
     grid-template-rows: 50% auto 50px;
+    background: rgba(63, 195, 128,0.9);
+     
 }
 
 #gallery{
@@ -102,7 +104,7 @@ h2{
 
 /* contact */
 #contacts{
-  background: #1abc9c;
+  background:rgba(26, 188, 156,0.8);
   min-height: auto;
 }
 
@@ -227,13 +229,20 @@ padding-left: 5px;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 100%;
   grid-gap: 10px;
+  align-items: center;
 }
 
 .excel-content2 {
   margin: 30px;
   /*margin-left: 0px;
    height: 600px;*/
-  background-color:  rgba(245, 245, 245, 0.7);
+  background-color:  rgba(245, 245, 245, 0.85);
+}
+
+.excel-font {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 8vh;
+	opacity: 0.6;
 }
 
 .logo-excel--big {
@@ -261,7 +270,7 @@ padding-left: 5px;
   margin-right: 50px;
   font-size: 3vh;
   /*color: white;*/
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Satisfy', cursive;
   font-weight: Light;
 }
 
@@ -280,7 +289,7 @@ padding-left: 5px;
 }
 
 .excel-img {
-  height: 80px;
+  height: 100px;
 }
 
 .excel-title {
@@ -448,6 +457,8 @@ padding-left: 5px;
     grid-auto-rows: auto;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
+    /*new code delete if not centered both sections*/
+    align-items: center;
   }
 
   .logo-excel--big {
@@ -470,10 +481,11 @@ padding-left: 5px;
 
   .excel-content--main {
     margin-top: 0px;
-    font-size: 2.3vh;
+    font-size: 1em;
     margin-left: 15px;
     margin-right: 15px;
     text-align: center;
+    font-family: 'Satisfy', cursive;
   }
 
   .heading-font-white {
@@ -481,6 +493,9 @@ padding-left: 5px;
     margin-bottom: 0px;
   }
 
+  .heading-font{
+    margin-top: 0px;
+  }
 
 .grid-container {
   display: grid;

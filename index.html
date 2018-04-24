@@ -5,6 +5,7 @@
         </title>
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Roboto:500|Work+Sans" rel="stylesheet"> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -82,18 +83,14 @@
                         </div>
                     </div>
                   <div class="excel-content2">
-                    <p class="center heading-font">Excel</p>
+                    <p class="center excel-font no-top-margin">Excel</p>
                     <div class="excel-content--main">
                         <p class="light-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere, magna sit amet tempor gravida, mi dui scelerisque
                             purus, mollis fringilla mi mauris id est. Aenean nec dolor eu leo eleifend volutpat.
                         </p>
-                        <div class="excel-logo--container">
-                            <div class="excel-logo--ibeto "><span class="light-text">IBeTo</span> <br />
-                                 <img class="excel-img" src="./images/ibeto2018.png" alt="ibeto logo" />
-                            </div>
-                            <div class="excel-logo--services "><span class="light-text">Excel Services</span><br />
-                                <img class="excel-img" src="images/excel/excel2018.png" alt="excel services" />
-                            </div>
+                        <div class="excel-logo--ibeto center "><span class="light-text">IBeTo</span> <br />
+                            <img class="excel-img" src="./images/ibeto2018.png" alt="ibeto logo" />
+                       </div>
                         </div>
                     </div>
                   </div>
@@ -219,7 +216,7 @@
             </section>
             <section id="experience" class="wp-zone">
             <div class="center">
-                <p class="heading-font">Experience</p>
+                <p class="heading-font-white">Experience</p>
                 <section class="card-container">
                     <article class="card">
                         <header class="card__title">
@@ -342,17 +339,17 @@
             </div>
         </footer>
         <script>
-                $(document).ready(function() {
-                //Preloader
-                $(window).on("load", function() {
-                preloaderFadeOutTime = 500;
-                function hidePreloader() {
-                var preloader = $('.spinner-wrapper');
-                preloader.fadeOut(preloaderFadeOutTime);
-                }
-                hidePreloader();
-                });
-                });
-                </script>
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
+</script>
     </body>
 </html>
