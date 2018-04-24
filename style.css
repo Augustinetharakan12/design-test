@@ -30,9 +30,6 @@ section{
 
 }
 
-p {
-  margin-bottom:0px; 
-}
 .grid-container {
   display: grid;
   grid-gap: 50px 100px;
@@ -130,9 +127,10 @@ video{
 
 #gallery{
   padding-top: 1px;
-  height: 100vh;
+  /*height: 100vh;*/
   background: ghostwhite;
-
+  min-height: initial;
+  padding-bottom: 15rem;
 }
 
 /* contact */
@@ -254,6 +252,10 @@ padding-left: 5px;
 
 .no-top-margin{
   margin-top: 0px;
+}
+
+.margin-bottom{
+  margin-bottom: 0px;
 }
 
 .excel-container {
@@ -461,6 +463,9 @@ padding-left: 5px;
   }
 
 @media only screen and (max-width: 786px) {
+  #gallery{
+    padding-bottom: 10rem;
+  }
   .Navbar{
     height: 40px;
     padding-top: 5px;
@@ -543,7 +548,7 @@ padding-left: 5px;
   }
 
   .heading-font{
-    margin-top: 0px;
+    font-size: 2.5rem;
   }
 
 .grid-container {
@@ -714,7 +719,7 @@ body { font-family: sans-serif; }
 
 /*gap*/
 .carousel {
-  background: rgba(63, 195, 128,0.9);
+  background: rgba(63, 195, 128,0.0);
 }
 
 /*cell*/
