@@ -62,7 +62,8 @@ h2{
     text-align: center;
   }
 
-  #home{
+ /* landing page */
+#home{
     min-height:auto;
     background: #6BB9F0;
 }
@@ -71,6 +72,36 @@ video{
   object-fit: fill;
 
 }
+
+.landing-container{
+  max-width:960px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+}
+
+.landing-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#34495E;
+  opacity:0.6;
+}
+
+.landing-content{
+  position:absolute;
+  top:15%;
+  right:10%;
+  z-index:2;
+  font:white;
+  font-size:30px;
+}
+
+
 
 #excel{
     padding-top: 1px;
@@ -345,6 +376,8 @@ padding-left: 5px;
 
   .Navbar-Link {
     margin: 0px 10px 0px 10px;
+    font-family: 'Ubuntu' , 'san-serif';
+    font-weight: bold;
   }
 
   .Navbar-Link a{
