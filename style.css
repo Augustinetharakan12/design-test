@@ -690,3 +690,24 @@ padding-left: 5px;
   }
 
 /* end of spinner css */
+
+/* external css: flickity.css */
+
+
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 400px;
+  }
+}
