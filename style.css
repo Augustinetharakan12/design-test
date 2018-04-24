@@ -711,3 +711,28 @@ body { font-family: sans-serif; }
     height: 400px;
   }
 }
+
+/*gap*/
+.carousel {
+  background: rgba(63, 195, 128,0.9);
+}
+
+/*cell*/
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: white;
+  /*border-radius: 5px;*/
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: grey;
+}
