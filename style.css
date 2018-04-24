@@ -190,7 +190,7 @@ text-align: center;
       text-align: center;
       width: 100%;
       line-height: 60px;
-      background: #FFFFF0;
+      background: white;
   }
 
   footer li{
@@ -203,7 +203,7 @@ text-align: center;
       height: 30px;
       width: 40px;
       font-size: 25px;
-      color: #FFFFF0;
+      color: white;
       background-color: #434343;
       padding-top:8px;
       border-radius: 100%;
