@@ -30,6 +30,9 @@ section{
 
 }
 
+p {
+  margin-bottom:0px; 
+}
 .grid-container {
   display: grid;
   grid-gap: 50px 100px;
@@ -52,25 +55,58 @@ h2{
     padding: 20px;
     font-family: 'Work Sans', sans-serif;
     font-size: 7
-}vh;
+}
     
 
   .section-content{
     text-align: center;
   }
 
+ /* landing page */
 #home{
-    padding-top: 1px;
-    width: 100%;
-    height: 100vh;
-    background: #3742fa;
+    min-height:auto;
+    background: #6BB9F0;
+}
+
+video{
+  object-fit: fill;
 
 }
+
+.landing-container{
+  max-width:960px;
+  padding-left:1rem;
+  padding-right:1rem;
+  margin:auto;
+  text-align:center;
+}
+
+.landing-overlay{
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#34495E;
+  opacity:0.56;
+}
+
+.landing-content{
+  position:absolute;
+  top:30%;
+  z-index:2;
+  color:white;
+  line-height: 1.1;
+  /*font-weight: 700;*/
+  margin: 2rem;
+}
+
 
 #excel{
     padding-top: 1px;
     height: 100vh;
-    background: #AEA8D3;
+    background: #34495E;
 
 }
 
@@ -84,24 +120,25 @@ h2{
 #experience{
     padding-top: 1px;
     height: 100vh;
-    background: #efeff3;
+    /*background: #efeff3;*/
     display: grid ;
     /* grid-template-columns:   auto ; */
     grid-template-rows: 50% auto 50px;
+    background: rgba(63, 195, 128,0.9);
+     
 }
 
 #gallery{
   padding-top: 1px;
   height: 100vh;
-  background: white;
+  background: ghostwhite;
 
 }
 
 /* contact */
 #contacts{
-  padding-top: 1px;
-  background:#41a58f ;
-
+  background:rgba(26, 188, 156,0.8);
+  min-height: auto;
 }
 
 .contact-content{
@@ -124,7 +161,6 @@ padding: 2em;
 
 .contact-desc{
 padding:15px;
-font-size:22px;
 color:white;
 text-align: center;
 }
@@ -212,25 +248,46 @@ padding-left: 5px;
   color: white;
 }
 
+.roboto-font{
+  font-family: 'Roboto', sans-serif;
+}
+
+.no-top-margin{
+  margin-top: 0px;
+}
+
 .excel-container {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 100%;
   grid-gap: 10px;
+  align-items: center;
 }
 
 .excel-content2 {
   margin: 30px;
-  height: 600px;
-  background-color: blueviolet;
+  /*margin-left: 0px;
+   height: 600px;*/
+  background-color:  rgba(245, 245, 245, 0.85);
+}
+
+.excel-font {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 8vh;
+  opacity: 0.6;
+}
+
+.excel-font-heading {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 8vh;
+  opacity: 0.7;
 }
 
 .logo-excel--big {
   display: block;
   margin: 80px auto;
-  height: 150px;
-  width: 150px;
+  height: 30vh;
 }
 
 .logo-container {
@@ -244,17 +301,16 @@ padding-left: 5px;
 .logo-excel--small {
   height: 60px;
   width: 60px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .excel-content--main {
   margin-left: 50px;
   margin-right: 50px;
   font-size: 3vh;
-  color: white;
-  font-family: 'Roboto', sans-serif;
+  /*color: white;
+  font-family: 'Satisfy', cursive;*/
   font-weight: Light;
-  opacity: 0.58;
 }
 
 .excel-logo--container {
@@ -262,7 +318,7 @@ padding-left: 5px;
 }
 
 .excel-logo--ibeto {
-  padding: 10px;
+  padding: 5vh;
   margin-right: auto;
 }
 
@@ -272,8 +328,7 @@ padding-left: 5px;
 }
 
 .excel-img {
-  width: 80px;
-  height: 80px;
+  height: 100px;
 }
 
 .excel-title {
@@ -309,7 +364,7 @@ padding-left: 5px;
     top: 0%;
     width: 100%;
     padding: 10px;
-    z-index: 1;
+    z-index: 3;
     /*background-color:rgb(255, 255, 255);*/
     /*box-shadow: 0 1px 3px #434343;*/
     /*-webkit-box-shadow: 0 1px 3px #434343;*/
@@ -327,6 +382,8 @@ padding-left: 5px;
 
   .Navbar-Link {
     margin: 0px 10px 0px 10px;
+    font-family: 'Ubuntu' , 'san-serif';
+    font-weight: bold;
   }
 
   .Navbar-Link a{
@@ -356,6 +413,11 @@ padding-left: 5px;
     color: rgb(255, 255, 255);
   }
 
+  .uline{
+    text-decoration: underline;
+    font-size: 6vw;
+    font-weight: 600;
+  }
 
   .slideUp {
     -webkit-transform: translateY(-100px);
@@ -373,8 +435,7 @@ padding-left: 5px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-auto-rows:500px;
-    margin: 100px;
-   
+    margin: 5%;
   }
   .card {
     /*box-shadow: 0px 1px 5px #555;*/
@@ -388,6 +449,15 @@ padding-left: 5px;
   .card__description {
     padding: .5rem;
     line-height: 5em;
+  }
+
+  .card-img{
+    height:7em;
+    border-radius: 15em;
+  }
+
+  .light-text{
+    opacity: 0.7;
   }
 
 @media only screen and (max-width: 786px) {
@@ -433,32 +503,38 @@ padding-left: 5px;
     grid-auto-rows: auto;
     grid-template-columns: 1fr;
     grid-row-gap: 10px;
+    /*new code delete if not centered both sections*/
+    align-items: center;
   }
 
   .logo-excel--big {
     padding: 0px;
     margin-top: 40px;
     margin-bottom: 0px;
+    height: 25vh;
   }
 
   .logo-excel--small {
     padding: 10px 7px;
     margin-top: 30px;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
   }
 
   .excel-content2 {
     margin-top: 0px;
-    height: 430px;
+    background: initial;
   }
 
   .excel-content--main {
     margin-top: 0px;
-    font-size: 2.3vh;
+    font-size: 1em;
     margin-left: 15px;
     margin-right: 15px;
     text-align: center;
+    /*font-family: 'Satisfy', cursive;*/
+    
+    color: white;
   }
 
   .heading-font-white {
@@ -466,6 +542,9 @@ padding-left: 5px;
     margin-bottom: 0px;
   }
 
+  .heading-font{
+    margin-top: 0px;
+  }
 
 .grid-container {
   display: grid;
@@ -482,8 +561,6 @@ padding-left: 5px;
 .footer-img{
   max-height:10vh ;
 }
-}
-
  /*contact */
 
  .contact-content{
@@ -499,7 +576,7 @@ padding-left: 5px;
 }
 
 .contact-img{
-   height:10em;
+   height: 8em;
    border-radius: 20em;
    
 }
@@ -511,9 +588,126 @@ padding-left: 5px;
   text-align: center;
 }
 
+.excel-font {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 8vh;
+  opacity: 0.7;
+  margin-top: 0px;
+  color: white;
 }
+  .excel-font-heading {
+    color: white;
+    opacity: 0.8;
+    font-size: 8.5vh;
+    margin-top: 0px;
+    }
+
+
+
+.excel-logo--ibeto {
+  padding: 10px;
+  margin-right: auto;
+}
+/*text on landing page*/
+.landing-content {
+	position: absolute;
+	top: 30%;
+	z-index: 2;
+	color: white;
+	line-height: 1.1;
+	font-weight: 550;
+	margin: 1rem;
+}
+
+.uline{
+  font-size: 14vw;
+}
+}
+
 @media only screen and (min-width: 786px) {
   .Navbar-Link a{
   color: white;
  }
+ .excel-content2 {
+  margin-left: 0px;
+}
+.landing-content {
+  right: 0%;
+}
+}
+
+@media screen and (max-width: 992px) and (min-width: 786px) {
+  .logo-excel--small {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+  }
+  .uline{
+    font-size: 10vw;
+  }
+}
+
+/*spinner css*/
+
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1abc9c;
+  z-index: 999999;
+  }
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+/* end of spinner css */
+
+/* external css: flickity.css */
+
+
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 400px;
+  }
 }

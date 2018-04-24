@@ -3,18 +3,33 @@
         <title>
             Excel-Marketing Page
         </title>
+        
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Roboto:500|Work+Sans" rel="stylesheet"> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Roboto:500|Work+Sans" rel="stylesheet"> 
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="script.js"></script>
+
     
     </head>
     <body>
+          <!--CSS Spinner-->
+        <div class="spinner-wrapper">
+        <div class="spinner"></div>
+        </div>
         <header>
 
               <div class="Navbar">
@@ -22,7 +37,7 @@
                     <img src="./images/excel/excel2018.png" class="excel-logo">
                 </div>
                 <div class="Navbar-Link--Toggle">
-                  <div id="trigger" style="color: grey;"> &#x2630; </div>
+                  <div id="trigger" style="color: whitesmoke;"> &#x2630; </div>
                 </div>
                 <nav id="navid" class="Navbar-Items Navbar-Items--Right">
                       <div class="Navbar-Link">
@@ -55,15 +70,25 @@
                           <a href="#contacts">Contacts</a>
                           </div>
                       </div>
-
                 </nav>
               </div>
 
         </header>
         <main>
             <section id="home" class="wp-zone">
-                <div class="center">
-                </div>
+                <div class="landing container">
+                      <!--  <iframe style="width: 100vw;height: 100vh;border: none;" src="https://www.youtube.com/embed/oXlHqqvvECQ?autoplay=1&loop=1&showinfo=0&controls=0&autohide=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe> -->
+                        <video style="width: 100vw;height: 100vh;border: none;" src="images/Excel 2017  Aftermovie.mp4" autoplay="true" loop="true">
+                        </video>
+                    
+                    <div class="landing-overlay"></div>
+                    <div class="landing-content">
+                        <span class="uline">Inspire</span> <br>
+                        <span class="uline">Innovate</span> <br>
+                        <span class="uline">Engineer</span> <br>
+                    </div>
+                </div>    
             </section>
             <section id="excel" class="wp-zone">
                 <div class="excel-container">
@@ -78,18 +103,14 @@
                         </div>
                     </div>
                   <div class="excel-content2">
-                    <p class="center heading-font-white">Excel</p>
+                    <p class="center excel-font-heading">Excel</p>
                     <div class="excel-content--main">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere, magna sit amet tempor gravida, mi dui scelerisque
+                        <p class="light-text center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere, magna sit amet tempor gravida, mi dui scelerisque
                             purus, mollis fringilla mi mauris id est. Aenean nec dolor eu leo eleifend volutpat.
                         </p>
-                        <div class="excel-logo--container">
-                            <div class="excel-logo--ibeto">IBeTo <br />
-                                 <img class="excel-img" src="./images/ibeto2018.png" alt="ibeto logo" />
-                            </div>
-                            <div class="excel-logo--services">Excel Services<br />
-                                <img class="excel-img" src="images/excel/excel2018.png" alt="excel services" />
-                            </div>
+                        <div class="excel-logo--ibeto center "><span class="light-text"><b>IBeTo</b></span> <br />
+                            <img class="excel-img" src="./images/ibeto2018.png" alt="ibeto logo" />
+                       </div>
                         </div>
                     </div>
                   </div>
@@ -215,37 +236,38 @@
             </section>
             <section id="experience" class="wp-zone">
             <div class="center">
-                <p class="heading-font">Experience</p>
-                <section class="card-container">
-                    <article class="card">
-                        <header class="card__title">
-                            <h3>Hello World</h3>
-                        </header>
-                        <main class="card__description">
-                            Lorem Ipsum dolor amet sun Lorem Ipsum dolor amet sun Lorem Ipsum dolor amet sun
-                        </main>
-                    </article>
-                </section>
+                <p class="heading-font-white">Experience</p>
             </div>
             </section>
             <section id="gallery" class="wp-zone">
-                <div class="center">
-                <p class="heading-font">Gallery</p>
+                <div class="center container">
+                <p class="heading-font no-top-margin">Gallery</p>
+                    <div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround":true,"freeScroll":true }'>
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+                    </div>
                 </div>
             </section>
             <section id="contacts" class="wp-zone">
                 <div class="center">
-                <h1>Contacts</h1>
+                        <p class="heading-font-white no-top-margin">Contact Us</p>
                 <div class="contact-content">
                     <div class="contact-card">
                         <div> 
                             <img class="contact-img" src="./images/pranav.jpeg">
                         </div>
                         <div class="contact-desc">
-                            <b>V. Pranav</b><br>
+                                <span class="font-family: 'Work Sans', sans-serif;"><b>V. Pranav</b></span>
+                                <br>
                             Chairman<br>
-                            <i class="fa fa-envelope"> vpranav@excelmec.org </i><br>
-                            <i class="fa fa-phone"></i> +91 81378 16854<br>
+                            <i class="fa fa-envelope"></i> 
+                            <span>vpranav@excelmec.org</span><br>
+                            <i class="fa fa-phone"></i> 
+                            <span style="opacity: 0.8;">+91 81378 16854<br></span>
                         </div>
                     </div>
                     <div class="contact-card">
@@ -253,10 +275,12 @@
                             <img class="contact-img" src="./images/fabin.jpeg">
                         </div>
                         <div class="contact-desc">
-                            <b>Mohammed Fabin</b><br>
+                                <span class="font-family: 'Work Sans', sans-serif;"><b>Mohammed Fabin</b></span><br>
                             General Secretary<br>
-                            <i class="fa fa-envelope"> fabin@excelmec.org</i><br>
-                            <i class="fa fa-phone"></i> +91 88480 54308<br>
+                            <i class="fa fa-envelope"></i> 
+                            <span >fabin@excelmec.org</span><br>
+                            <i class="fa fa-phone"></i>
+                            <span style="opacity: 0.8;" > +91 88480 54308</span><br>
                         </div>
                     </div>
                     <div class="contact-card">
@@ -264,10 +288,13 @@
                             <img class="contact-img" src="./images/rakesh.jpeg">
                         </div>
                         <div class="contact-desc">
-                            <b>Rakesh Krishnan</b><br>
-                            Joint Secretary<br>
-                            <i class="fa fa-envelope"> rakeshkr@excelmec.org </i><br>
-                            <i class="fa fa-phone"></i> +91 82818 25893<br>
+                            <span class="font-family: 'Work Sans', sans-serif;"><b>Rakesh Krishnan</b></span>
+                            <br>
+                            <span >Joint Secretary</span><br>
+                            <i class="fa fa-envelope"></i>
+                            <span >rakeshkr@excelmec.org</span><br>
+                            <i class="fa fa-phone"></i>
+                            <span style="opacity: 0.8;">+91 82818 25893<br>
                         </div>
                     </div>
                 </div>
@@ -322,5 +349,18 @@
                 </div>
             </div>
         </footer>
+        <script>
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+preloaderFadeOutTime = 500;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
+</script>
     </body>
 </html>

@@ -1,5 +1,16 @@
 //scorll effect
 $(document).ready(function(){
+  //preloader
+  $(window).on("load", function() {
+    preloaderFadeOutTime = 500;
+    function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+    });
+
+
     $('.wp-zone').waypoint(function(direction) {
     if (direction === 'down') {
       $('nav a').removeClass('disable-click');
@@ -83,5 +94,7 @@ $(window).resize(function (){
      $('#navid').show();
   }
 });
+
+
 
   });
