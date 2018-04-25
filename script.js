@@ -20,7 +20,7 @@ $(document).ready(function(){
     }, {
     offset: '5%'
   });
-  
+
     $('.wp-zone').waypoint(function(direction) {
       if (direction === 'up') {
         $('nav a').removeClass('disable-click');
@@ -31,7 +31,7 @@ $(document).ready(function(){
       offset: '-5%'
   });
 
-  
+
   //navbar
  $('#trigger').click( function(event) {
     if($(window).width() < 786){
@@ -40,10 +40,10 @@ $(document).ready(function(){
       $('#navid').toggle();
       $(document).click( function() {
         $('#navid').hide();
-        
-     });  
-    
-    }  
+
+     });
+
+    }
    });
 
    $(window).resize(function (){
@@ -56,7 +56,7 @@ $(document).ready(function(){
 $(window).scroll(function() {
   // checks if window is scrolled more than certain px, adds/removes solid class
 
-  if($(this).scrollTop() > 690) { 
+  if($(this).scrollTop() > 690) {
       $('.Navbar').addClass('solid');
       $('.Navbar').removeClass('white-text');
       $('.Navbar-Link a').css("color","black");
@@ -64,7 +64,7 @@ $(window).scroll(function() {
       $('.Navbar').removeClass('solid');
       $('.Navbar').addClass('white-text');
       $('.Navbar-Link a').css("color","white");
-      
+
   }
 
 });
@@ -73,7 +73,7 @@ $(window).scroll(function() {
 $(window).scroll(
   {
       previousTop: 0
-  }, 
+  },
   function () {
   var currentTop = $(window).scrollTop();
   if (currentTop < this.previousTop) {
