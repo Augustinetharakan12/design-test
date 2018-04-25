@@ -132,7 +132,11 @@ video{
   width: 60%;
 	margin: 70px auto;
 
+  line-height: 1;
+  height: 60%;
+  font-size:1px; 
 }
+
 .bubble blockquote {
 	margin: 10px 10px 0;
 	background: #fff;
@@ -140,9 +144,10 @@ video{
 	position: relative;
 	border: none;
 	border-radius: 8px;
-	font-size: 1.25em;
+	font-size: 22px;
 	color: #1e528e;
 }
+
 .bubble blockquote:before, .bubble blockquote:after {
 	content: "\201C";
 	position: absolute;
@@ -171,8 +176,35 @@ video{
 }
 .bubble cite {
 	padding-left: 20px;
-	font-size: 1.25em;
+	font-size: 25px;
   color:#f7f7f7;
+}
+@media only screen and (max-width: 786px) {
+  .bubble blockquote {
+    padding:30px;
+    font-size:15px;
+  }
+
+  .bubble cite {
+  font-size: 15px;
+  color:#f7f7f7;
+ }
+
+ .bubble blockquote:before, .bubble blockquote:after {
+	content: "\201C";
+	position: absolute;
+	font-size: 40px;
+	padding: 10px;
+}
+.bubble blockquote:before {
+	top: 0;
+	left: 10px;
+}
+.bubble blockquote:after {
+	content: "\201D";
+	right: 10px;
+	bottom: -.5em;
+}
 }
 
 #gallery{
@@ -488,7 +520,7 @@ padding-left: 5px;
     opacity: 0.7;
   }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 786px) { 
   #gallery{
     padding-bottom: 10rem;
   }
@@ -766,4 +798,9 @@ body { font-family: sans-serif; }
   line-height: 200px;
   font-size: 80px;
   color: grey;
+}
+
+.slick-slider {
+    height: 60%;
+    line-height: 1;
 }
