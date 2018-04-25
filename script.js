@@ -96,5 +96,8 @@ $(window).resize(function (){
 });
 
 
+/* Scroll Reveal in sponsor section */
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.grid-item', { duration: 1500  });
 
   });
