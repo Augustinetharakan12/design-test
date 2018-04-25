@@ -144,15 +144,8 @@ video{
 	position: relative;
 	border: none;
 	border-radius: 8px;
-	font-size: 20px;
+	font-size: 22px;
 	color: #1e528e;
-}
-
-@media only screen and (max-width: 786px) {
-  .bubble blockquote {
-    padding:30px;
-    font-size:13px;
-  }
 }
 
 .bubble blockquote:before, .bubble blockquote:after {
@@ -183,14 +176,35 @@ video{
 }
 .bubble cite {
 	padding-left: 20px;
-	font-size: 30px;
+	font-size: 25px;
   color:#f7f7f7;
 }
 @media only screen and (max-width: 786px) {
+  .bubble blockquote {
+    padding:30px;
+    font-size:15px;
+  }
+
   .bubble cite {
-  font-size: 13px;
+  font-size: 15px;
   color:#f7f7f7;
  }
+
+ .bubble blockquote:before, .bubble blockquote:after {
+	content: "\201C";
+	position: absolute;
+	font-size: 40px;
+	padding: 10px;
+}
+.bubble blockquote:before {
+	top: 0;
+	left: 10px;
+}
+.bubble blockquote:after {
+	content: "\201D";
+	right: 10px;
+	bottom: -.5em;
+}
 }
 
 #gallery{
@@ -787,6 +801,6 @@ body { font-family: sans-serif; }
 }
 
 .slick-slider {
-    height: 60%;important 
+    height: 60%;
     line-height: 1;
 }
