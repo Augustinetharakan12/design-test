@@ -95,6 +95,16 @@ $(window).resize(function (){
   }
 });
 
+//experience
+$('.quotes').slick({
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 800,
+  slidesToShow: 1,
+  adaptiveHeight: false
+});
 
 /* Scroll Reveal in sponsor section */
 window.sr = ScrollReveal({ reset: true });

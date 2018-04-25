@@ -34,9 +34,6 @@ section{
 
 }
 
-p {
-  margin-bottom:0px; 
-}
 .grid-container {
   display: grid;
   grid-gap: 50px 100px;
@@ -70,6 +67,7 @@ h2{
 #home{
     min-height:auto;
     background: #6BB9F0;
+    overflow:hidden;
 }
 
 video{
@@ -121,22 +119,69 @@ video{
 
 }
 
+/*experience */
 #experience{
     padding-top: 1px;
+    min-height: auto;
     height: 100vh;
-    /*background: #efeff3;*/
-    display: grid ;
-    /* grid-template-columns:   auto ; */
-    grid-template-rows: 50% auto 50px;
     background: rgba(63, 195, 128,0.9);
+    overflow:hidden;
      
+}
+
+.quotes{
+  width: 60%;
+	margin: 70px auto;
+   
+}
+.bubble blockquote {
+	margin: 10px 10px 0;
+	background: #fff;
+	padding: 60px;
+	position: relative;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.25em;
+	color: #1e528e;
+}
+.bubble blockquote:before, .bubble blockquote:after {
+	content: "\201C";
+	position: absolute;
+	font-size: 80px;
+	padding: 10px;
+	line-height: 1;
+	color: #1e528e;
+}
+.bubble blockquote:before {
+	top: 0;
+	left: 10px;
+}
+.bubble blockquote:after {
+	content: "\201D";
+	right: 10px;
+	bottom: -.5em;
+}
+.bubble div {
+	width: 0;
+	height: 0;
+	border-left: 0 solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #fff;
+	margin: 0 0 0 60px;
+	margin-bottom: 10px;
+}
+.bubble cite {
+	padding-left: 20px;
+	font-size: 1.25em;
+  color:#f7f7f7;
 }
 
 #gallery{
   padding-top: 1px;
-  height: 100vh;
+  /*height: 100vh;*/
   background: ghostwhite;
-
+  min-height: initial;
+  padding-bottom: 15rem;
 }
 
 /* contact */
@@ -196,7 +241,7 @@ text-align: center;
       text-align: center;
       width: 100%;
       line-height: 60px;
-      background: #FFFFF0;
+      background: white;
   }
 
   footer li{
@@ -209,7 +254,7 @@ text-align: center;
       height: 30px;
       width: 40px;
       font-size: 25px;
-      color: #FFFFF0;
+      color: white;
       background-color: #434343;
       padding-top:8px;
       border-radius: 100%;
@@ -258,6 +303,10 @@ padding-left: 5px;
 
 .no-top-margin{
   margin-top: 0px;
+}
+
+.margin-bottom{
+  margin-bottom: 0px;
 }
 
 .excel-container {
@@ -435,36 +484,15 @@ padding-left: 5px;
     transition: transform 1s ease-out;
   }
   
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-auto-rows:500px;
-    margin: 5%;
-  }
-  .card {
-    /*box-shadow: 0px 1px 5px #555;*/
-    background-color: white;
-  }
-  .card__title {
-    font-size: 2rem;
-    padding: .5rem;
-  }
-  
-  .card__description {
-    padding: .5rem;
-    line-height: 5em;
-  }
-
-  .card-img{
-    height:7em;
-    border-radius: 15em;
-  }
 
   .light-text{
     opacity: 0.7;
   }
 
 @media only screen and (max-width: 786px) {
+  #gallery{
+    padding-bottom: 10rem;
+  }
   .Navbar{
     height: 40px;
     padding-top: 5px;
@@ -547,7 +575,7 @@ padding-left: 5px;
   }
 
   .heading-font{
-    margin-top: 0px;
+    font-size: 2.5rem;
   }
 
 .grid-container {
@@ -714,4 +742,29 @@ body { font-family: sans-serif; }
   .carousel img {
     height: 400px;
   }
+}
+
+/*gap*/
+.carousel {
+  background: rgba(63, 195, 128,0.0);
+}
+
+/*cell*/
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: white;
+  /*border-radius: 5px;*/
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: grey;
 }
