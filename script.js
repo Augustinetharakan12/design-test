@@ -95,19 +95,19 @@ $(window).resize(function (){
   }
 });
 
-//experience
-$('.quotes').slick({
-  dots: true,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  speed: 800,
-  slidesToShow: 1,
-  adaptiveHeight: false
-});
 
 /* Scroll Reveal in sponsor section */
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.grid-item', { duration: 1500  });
+
+/* flickety testimonial*/
+var flkty = new Flickity( '.main-gallery', {
+  cellAlign: 'left',
+  contain: true,
+  wrapAround: true,
+  prevNextButtons: false,
+  autoPlay: 1500,
+  prevNextButtons: true
+});
 
   });

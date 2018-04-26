@@ -128,85 +128,6 @@ video{
 
 }
 
-.quotes{
-  width: 60%;
-	margin: 70px auto;
-
-  line-height: 1;
-  height: 60%;
-  font-size:1px; 
-}
-
-.bubble blockquote {
-	margin: 10px 10px 0;
-	background: #fff;
-	padding: 60px;
-	position: relative;
-	border: none;
-	border-radius: 8px;
-	font-size: 22px;
-	color: #1e528e;
-}
-
-.bubble blockquote:before, .bubble blockquote:after {
-	content: "\201C";
-	position: absolute;
-	font-size: 80px;
-	padding: 10px;
-	line-height: 1;
-	color: #1e528e;
-}
-.bubble blockquote:before {
-	top: 0;
-	left: 10px;
-}
-.bubble blockquote:after {
-	content: "\201D";
-	right: 10px;
-	bottom: -.5em;
-}
-.bubble div {
-	width: 0;
-	height: 0;
-	border-left: 0 solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid #fff;
-	margin: 0 0 0 60px;
-	margin-bottom: 10px;
-}
-.bubble cite {
-	padding-left: 20px;
-	font-size: 25px;
-  color:#f7f7f7;
-}
-@media only screen and (max-width: 786px) {
-  .bubble blockquote {
-    padding:30px;
-    font-size:15px;
-  }
-
-  .bubble cite {
-  font-size: 15px;
-  color:#f7f7f7;
- }
-
- .bubble blockquote:before, .bubble blockquote:after {
-	content: "\201C";
-	position: absolute;
-	font-size: 40px;
-	padding: 10px;
-}
-.bubble blockquote:before {
-	top: 0;
-	left: 10px;
-}
-.bubble blockquote:after {
-	content: "\201D";
-	right: 10px;
-	bottom: -.5em;
-}
-}
-
 #gallery{
   padding-top: 1px;
   /*height: 100vh;*/
@@ -323,6 +244,12 @@ padding-left: 5px;
 }
 
 .heading-font-white{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 7vh;
+  color: white;
+}
+
+.heading-font-white-no-margin{
   font-family: 'Work Sans', sans-serif;
   font-size: 7vh;
   color: white;
@@ -800,7 +727,54 @@ body { font-family: sans-serif; }
   color: grey;
 }
 
-.slick-slider {
-    height: 60%;
-    line-height: 1;
+/* flickety testimonial*/
+.main-gallery {
+  background: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-cell {
+  width: 100%;
+}
+
+.testimonial {
+  text-align: center;
+  max-width: 850px;
+  margin: 100px auto 130px auto;
+  padding: 0 20px;
+}
+
+.testimonial-avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.testimonial-quote {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.testimonial-author {
+  display: block;
+  font-weight: 600;
+  color: #7AA641;
+}
+
+.flickity-page-dots {
+  bottom: 25px;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: #7AA641;
+}
+@media only screen and (max-width: 786px) {
+  .testimonial-quote {
+    font-size: 15px;
+  }
+  .testimonial {
+    margin: 50px auto 65px auto;
+    padding: 0 20px;
+  }
 }
