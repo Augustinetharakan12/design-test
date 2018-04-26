@@ -130,8 +130,9 @@ video{
 
 #gallery{
   padding-top: 1px;
-  /*height: 100vh;*/
-  background: ghostwhite;
+  /*height: 100vh;
+  background: ghostwhite;*/
+  background: url("./images/whitediamond.png");
   min-height: initial;
   padding-bottom: 15rem;
 }
@@ -220,8 +221,8 @@ padding-left: 5px;
 
 .sponsor-image{
   max-height: 12.9vh;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /*-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);*/
 }
  .sponsor-font{
   font-family: 'Fredericka the Great', cursive;
@@ -400,8 +401,8 @@ padding-left: 5px;
   .Navbar-Link a{
     position: relative;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 13px;
+    letter-spacing: 2px;
+    font-size: 14px;
     padding: 24px 5px;
     line-height: 48px;
     -webkit-transition: color 0.3s;
@@ -433,13 +434,13 @@ padding-left: 5px;
   .slideUp {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
-    transition: transform 1s ease-out;
+    transition: transform .75s ease-out;
   }
 
   .slideDown {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    transition: transform 1s ease-out;
+    transition: transform .6s ease-out;
   }
 
 
@@ -463,9 +464,13 @@ padding-left: 5px;
   }
   .Navbar-Link {
     padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
  }
  .Navbar-Link a{
-  color: black !important;
+  color: rgba(0,0,0,0.85) !important;
+  font-size: 17px;
+  letter-spacing: 3px;
  }
 
   .Navbar-Items--Right  {
@@ -483,7 +488,8 @@ padding-left: 5px;
     display: flex;
   }
   .center-mobile{
-    text-align: center;
+    text-align: right;
+    padding-bottom: 10px;
   }
   .excel-logo{
     height: 40px;
@@ -772,6 +778,7 @@ body { font-family: sans-serif; }
 @media only screen and (max-width: 786px) {
   .testimonial-quote {
     font-size: 15px;
+    padding: 10px 30px;
   }
   .testimonial {
     margin: 50px auto 65px auto;
